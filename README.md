@@ -11,7 +11,6 @@
 - O que é Programação Orientada a Objetos?
 - Vantagens da POO
 - Conceitos básicos: Classes e Objetos
-- Instalação e configuração do ambiente Java
 
 **Atividades:**
 
