@@ -18,35 +18,7 @@
 - Demonstração de criação de classes e objetos em Java
 - Exercícios práticos de criação de classes simples
 
-#### Aula 2: Herança e Polimorfismo
-
-**Tópicos:**
-
-- Herança em Java
-- Polimorfismo e sobrescrita de métodos
-- Classes abstratas e interfaces
-
-**Atividades:**
-
-- Explicação teórica sobre herança e polimorfismo
-- Exemplos práticos de herança e polimorfismo
-- Exercícios práticos de aplicação de herança e interfaces
-
-#### Aula 3: Encapsulamento e Modificadores de Acesso
-
-**Tópicos:**
-
-- Encapsulamento em POO
-- Modificadores de acesso (public, private, protected)
-- Getters e setters
-
-**Atividades:**
-
-- Explicação teórica sobre encapsulamento
-- Demonstração de uso de modificadores de acesso
-- Exercícios práticos de encapsulamento
-
-#### Aula 4: Construtores e Destrutores
+#### Aula 2: Construtores e Destrutores
 
 **Tópicos:**
 
@@ -60,7 +32,7 @@
 - Exemplos práticos de uso de construtores
 - Exercícios práticos de criação de construtores sobrecarregados
 
-#### Aula 5: Métodos em POO
+#### Aula 3: Métodos em POO
 
 **Tópicos:**
 
@@ -74,6 +46,34 @@
 - Explicação teórica sobre métodos
 - Demonstração de criação de métodos e chamada de métodos
 - Exercícios práticos de criação de métodos e sobrecarga de métodos
+
+#### Aula 4: Encapsulamento e Modificadores de Acesso
+
+**Tópicos:**
+
+- Encapsulamento em POO
+- Modificadores de acesso (public, private, protected)
+- Getters e setters
+
+**Atividades:**
+
+- Explicação teórica sobre encapsulamento
+- Demonstração de uso de modificadores de acesso
+- Exercícios práticos de encapsulamento
+
+#### Aula 5: Herança e Polimorfismo
+
+**Tópicos:**
+
+- Herança em Java
+- Polimorfismo e sobrescrita de métodos
+- Classes abstratas e interfaces
+
+**Atividades:**
+
+- Explicação teórica sobre herança e polimorfismo
+- Exemplos práticos de herança e polimorfismo
+- Exercícios práticos de aplicação de herança e interfaces
 
 #### Aula 6: Tratamento de Exceções
 
