@@ -29,11 +29,12 @@ public class App
     }
 }
 ```
+
 O objeto pato é declarado, mas não inicializado. Isso significa que ele não aponta para nenhum endereço de memória.
 E não iremos conseguir acessar nenhum atributo ou método da classe Pato.
 
 ### 3. Na Classe ‘App’, declaramos um objeto da classe Pato, e o inicializamos.
- 
+
 ![img_1.png](image/img_1.png)
 
 ```java
@@ -45,6 +46,7 @@ public class App
     }
 }
 ```
+
 O objeto pato é declarado e inicializado. Isso significa que ele aponta para um endereço de memória.
 E podemos acessar os atributos e métodos da classe Pato.
 
@@ -80,7 +82,6 @@ public class App
 ```
 
 ### 5. Se inicializarmos dois objetos com os mesmos valores, eles não serão o mesmo objeto.
-
 
 ![img_3.png](image/img_3.png)
 
