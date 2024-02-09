@@ -1,28 +1,35 @@
 package org.example.lesson_05.cemiteriodeelefantes.banco;
 
-public class CaixaEletronico {
-    public void sacar(ContaBancaria conta, double valor) {
-        if (valor <= 0) {
-            System.out.println("Valor de saque inválido.");
-            return;
+public class CaixaEletronico
+{
+    public void sacar(ContaBancaria conta, double valor)
+    {
+        // é melhor usar o método sacar para alterar o valor do saldo
+        if (conta.sacar(valor))
+        {
+            System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + conta.getSaldo()); // foi feita a alteração para usar o método que retorna o valor
         }
-        
-        if (conta.saldo < valor) {
-            System.out.println("Saldo insuficiente para saque.");
-            return;
+        else
+        {
+            System.out.println("IMPOSSIVEL SACAR!!!");
         }
 
-        conta.saldo -= valor;
-        System.out.println("Saque de R$" + valor + " realizado com sucesso. Saldo atual: R$" + conta.saldo);
     }
 
-    public void depositar(ContaBancaria conta, double valor) {
-        if (valor <= 0) {
+    public void depositar(ContaBancaria conta, double valor)
+    {
+        if (valor <= 0)
+        {
             System.out.println("Valor de depósito inválido.");
             return;
         }
 
-        conta.saldo += valor;
-        System.out.println("Depósito de R$" + valor + " realizado com sucesso. Saldo atual: R$" + conta.saldo);
+        conta.depositar(valor);
+        System.out.println("Depósito de R$" + valor + " realizado com sucesso. Saldo atual: R$" + conta.getSaldo());
+    }
+
+    public void verSaldo(ContaBancaria conta)
+    {
+        System.out.println("Seu saldo é: R$" + String.valueOf(conta.getSaldo()));
     }
 }

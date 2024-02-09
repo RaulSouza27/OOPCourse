@@ -1,21 +1,13 @@
 package org.example.lesson_05.cemiteriodeelefantes.gestao;
 
-import java.util.List;
+public class Departamento
+{
+    private String nome;
+    private Gerente gerente;
 
-public class Departamento {
-    public String nome;
-    public Gerente gerente;
-    public List<Empregado> empregados;
-
-    public Departamento(String nome) {
+    public Departamento(String nome, Gerente gerente)
+    {
         this.nome = nome;
-    }
-
-    public void adicionarEmpregado(Empregado empregado) {
-        empregados.add(empregado);
-    }
-
-    public void removerEmpregado(Empregado empregado) {
-        empregados.remove(empregado);
+        this.gerente = gerente;
     }
 }

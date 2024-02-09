@@ -1,31 +1,54 @@
 package org.example.lesson_05.cemiteriodeelefantes.gestao;
 
 
-public class Empregado {
+public class Empregado
+{
     private String nome;
     private String cpf;
     private double salario;
     private boolean estaDeFerias;
     private String departamento;
+    private String cargo;
 
-    public Empregado(String nome, String cpf, double salario) {
+    public Empregado(String nome, String cpf, String departamento, String cargo)
+    {
         this.nome = nome;
         this.cpf = cpf;
-        this.salario = salario;
-        this.estaDeFerias = false;
+        this.departamento = departamento;
+        this.cargo = cargo;
+        this.salario = Rh.setSalario(cargo);
+        this.estaDeFerias = Rh.verificaFerias(cpf);
     }
 
-    public void calcularBonus() {
-        // Lógica para calcular bônus
-    }
-
-    public void mudarDepartamento(String novoDepartamento) {
+    public void mudarDepartamento(String novoDepartamento)
+    {
         this.departamento = novoDepartamento;
         // Lógica para mudança de departamento
     }
 
-    public void iniciarFerias() {
-        this.estaDeFerias = true;
-        // Lógica para iniciar as férias
+    public String getNome()
+    {
+        return nome;
     }
+    public String getCpf()
+    {
+        return cpf;
+    }
+    public double getSalario()
+    {
+        return salario;
+    }
+    public boolean getEstaDeFerias()
+    {
+        return estaDeFerias;
+    }
+    public String getDepartamento()
+    {
+        return departamento;
+    }
+    public String getCargo()
+    {
+        return cargo;
+    }
+
 }
