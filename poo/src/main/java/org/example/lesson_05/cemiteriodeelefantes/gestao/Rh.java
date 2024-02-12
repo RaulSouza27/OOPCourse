@@ -1,24 +1,28 @@
 package org.example.lesson_05.cemiteriodeelefantes.gestao;
 
+import org.example.lesson_05.cemiteriodeelefantes.empresa.Assistente;
+import org.example.lesson_05.cemiteriodeelefantes.empresa.Funcionario;
+import org.example.lesson_05.cemiteriodeelefantes.empresa.Gerente;
+
 import java.util.List;
 
 public class Rh extends Departamento
 {
-    private List<Empregado> empregados;
+    private List<Funcionario> funcionarios;
 
     public Rh(String nome, Gerente gerente)
     {
         super(nome, gerente);
     }
 
-    public List<Empregado> getEmpregados()
+    public List<Funcionario> getFuncionario()
     {
-        return empregados;
+        return funcionarios;
     }
 
-    public void newEmployee(Empregado novo)
+    public void newEmployee(Funcionario novo)
     {
-        empregados.add(novo);
+        funcionarios.add(novo);
     }
 
     public static boolean verificaFerias(String cpf)
@@ -35,22 +39,5 @@ public class Rh extends Departamento
         {
             return false;
         }
-    }
-
-    public static double setSalario(String cargo)
-    {
-        if (cargo == "assistente")
-        {
-            return 2000;
-        }
-        else if (cargo == "gerente")
-        {
-            return 5000;
-        }
-        else
-        {
-            return 0;
-        }
-
     }
 }

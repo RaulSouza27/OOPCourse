@@ -3,22 +3,21 @@ package org.example.lesson_05.cemiteriodeelefantes.empresa;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gerente extends Funcionario {
-    private List<Assistente> subordinados;
-
+public class Gerente extends Funcionario
+{
+    private double salario = 5000;
     public Gerente(String nome, String cpf, String matricula, String departamento)
     {
         super(nome,cpf,matricula,departamento);
-        this.subordinados = new ArrayList<>();
     }
 
-    public void adminEmployee(Assistente novo)
+    public static String work()
     {
-        subordinados.add(novo);
+        return "Eu sou o Gerente e gerencio meu setor";
     }
 
-    public List<Assistente> getSubordinados()
+    public double getSalario()
     {
-        return subordinados;
+        return salario;
     }
 }
